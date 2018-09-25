@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/media.css" />
 </head>
 <body>
 
     <header>
-      <div>
-        <a href="index.html">Swaroop Kondreddy</a>
+      <div class="container">
+        <a href="index.html" id="head-name">Swaroop Kondreddy</a>
         <nav>
           <a href="./index.html">About</a>
           <a href="./portfolio.html">Portfolio</a>
@@ -21,17 +22,34 @@
       </div>
     </header>
   
-    <div>
-      <section>
-        <h1>About Me</h1>
-  
+    <div id="main-container" class="container">
+        <section class="main-section">
+          <h1>Contact</h1>
     
-      </section>
+          <form id="contact-form">
+            <ul>
+              <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+              </li>
+              <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+              </li>
+              <li>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required="required"></textarea>
+              </li>
+            </ul>
+            <input type="submit">
+          </form>
+    
+        </section>
     </div>
   
     <footer>
-      <div>
-        Copyright &copy; Swaroop Kondreddy 
+      <div class="container">
+        &copy; Swaroop Kondreddy 
       </div>
     </footer>
   </body>
